@@ -26,7 +26,7 @@ if(isset($_POST['submit'])){
         }
         break;
         case "Login":
-        $email = $mysqli->real_escape_string($_POST['email']);
+        $email = $mysqli->pg_escape_string($_POST['email']);
         $pwd = $mysqli->real_escape_string($_POST['pwd']);
         $query = "select * from user_details where u_pwd='$pwd' AND u_email='$email'";
         $result = $mysqli->query($query);
