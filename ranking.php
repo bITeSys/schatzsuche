@@ -24,19 +24,29 @@ $curr_user_email = $_SESSION['login_user_email'];
 $curr_user_lvl = $_SESSION['login_user_lvl'];
 
 include('db.php');
-$mysqli = new mysqli("localhost",$user,$pwd,$dbName);
+$host        = "host = ec2-34-195-233-155.compute-1.amazonaws.com";
+$port        = "port = 5432";
+$dbname      = "dbname = d7uanuiosmq0is";
+$credentials = "user = lfkblfepuqflgr password=8d2d611f0f5075077857b68fb7042f8aa830966c060975783a6bd06fb4892804";
+$mysqli = pg_connect( "$host $port $dbname $credentials"  );
 
+//include('db.php');
+//$mysqli = new mysqli("localhost",$user,$pwd,$dbName);
 
-$query = "SELECT * FROM user_details ORDER BY u_lvl desc, time asc limit 10";
-if($result = $mysqli->query($query)){
+$result4 = pg_prepare($mysqli, "my_query4", "SELECT * FROM user_details ORDER BY u_lvl desc, time asc limit 10");
+$result4 = pg_execute($mysqli, "my_query4", array());
+        
+//$query = "SELECT * FROM user_details ORDER BY u_lvl desc, time asc limit 10";
+
+if(pg_num_rows($result4)>0){
     echo "<div style='text-align:-webkit-center;text-align:-moz-center'><table border='1px solid white' cellpadding='5px'><tr><td width='250px'>Name</td><td style='text-align:center; width:50px'>Level</td><td style='text-align:center; width:250px'>Time</td></tr>";
-    while($row=$result->fetch_row()){
-       if($row[2]=="subhrajyoti17@iimshillong.ac.in" || $row[2]=="indrasis17@iimshillong.ac.in"){
+    while($row = pg_fetch_object($result4)){
+		 /*if($row[2]=="subhrajyoti17@iimshillong.ac.in" || $row[2]=="indrasis17@iimshillong.ac.in"){
         $img = "<img witdth='20px' height='20px' src='assets/img/crown.png'></img>";
        }
        else{
         $img="";
-       }
+       }*/
         echo "<tr><td>".$row[1].$img."</td><td style='text-align:center'>".$row[6]."</td><td style='text-align:center'>".date( "Y-M-d H:i:s", strtotime($row[7])+5.5*3600)."</td></tr>";
     }
     echo "</table></div>";
