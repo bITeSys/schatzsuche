@@ -10,33 +10,46 @@ require_once("level.php");
 
 $curr_lvl = $_SESSION['login_user_lvl'];
 $curr_email = $_SESSION['login_user_email'];
-$authlvl = 31;
+
+/*$authlvl = 31;
 $getlvl = 7;
 
 if($curr_lvl==49){
     header('key: winner winner chicken dinner');
-}
+}*/
 
-
-if(isset($_POST['submit']) || isset($_POST['key']) || (isset($_GET['key'])&&$curr_lvl==$getlvl)){
+if(isset($_POST['submit']) || isset($_POST['key'])) /* || (isset($_GET['key'])&&$curr_lvl==$getlvl)) */{
     $key_submitted = isset($_POST['key'])?$_POST['key']:$_GET['key'];
     $key_submitted = strtolower($key_submitted);
     include('db.php');
-    $mysqli = new mysqli("localhost",$user,$pwd,$dbName);
-    $query = "INSERT INTO user_input_log (u_email, u_key) VALUES ('".$curr_email."', '".$key_submitted."')";
-    $mysqli->query($query);
+	$host        = "host = ec2-34-195-233-155.compute-1.amazonaws.com";
+    $port        = "port = 5432";
+    $dbname      = "dbname = d7uanuiosmq0is";
+    $credentials = "user = lfkblfepuqflgr password=8d2d611f0f5075077857b68fb7042f8aa830966c060975783a6bd06fb4892804";
+    $mysqli = pg_connect( "$host $port $dbname $credentials"  );
+    //$mysqli = new mysqli("localhost",$user,$pwd,$dbName);
+	$result1 = pg_prepare($mysqli, "my_query1", "INSERT INTO user_input_log (u_email, u_key) VALUES ($1,$2)";
+    $result1 = pg_execute($mysqli, "my_query1", array($curr_email,$key_submitted));
+    //$query = "INSERT INTO user_input_log (u_email, u_key) VALUES ('".$curr_email."', '".$key_submitted."')";
+    //$mysqli->query($query);
     if($levels[$curr_lvl]->key==$key_submitted){
-        $query = "INSERT INTO user_lvl (u_email, u_lvl) VALUES ('".$curr_email."', '".$curr_lvl."')";
-        $mysqli->query($query);
+		
+		$result2 = pg_prepare($mysqli, "my_query2", "INSERT INTO user_lvl (u_email, u_lvl) VALUES ($1,$2)";
+		$result2 = pg_execute($mysqli, "my_query2", array($curr_email,$curr_lvl));
+	
+        //$query = "INSERT INTO user_lvl (u_email, u_lvl) VALUES ('".$curr_email."', '".$curr_lvl."')";
+        //$mysqli->query($query);
 
         $_SESSION['login_user_lvl']++;
         $curr_lvl++;
-
-        $query = "UPDATE user_details set u_lvl='".$curr_lvl."'where u_email='".$curr_email."'";
-        $mysqli->query($query);
-        
+		
+		$result3 = pg_prepare($mysqli, "my_query3", "UPDATE user_details set u_lvl= $1 where u_email= $2";
+		$result3 = pg_execute($mysqli, "my_query3", array($curr_lvl,$curr_email));
+    
+        //$query = "UPDATE user_details set u_lvl='".$curr_lvl."'where u_email='".$curr_email."'";
+        //$mysqli->query($query);
     }
-    if($curr_lvl==$authlvl){
+    /*if($curr_lvl==$authlvl){
         require_once('rfc6238.php');
         $secretkey = 'GEZDGNBVGY3TQOJQGEZDGNBVGY3TQOJQ';
         if (TokenAuth6238::verify($secretkey,$key_submitted)) {
@@ -49,8 +62,8 @@ if(isset($_POST['submit']) || isset($_POST['key']) || (isset($_GET['key'])&&$cur
         } else {
             echo "<div style='position:absolute;'></div>";
         }
-    }
-    $mysqli->close();
+    }*/
+    pg_close($mysqli);
 }
 ?>
 <!DOCTYPE html><html><head><title>Treasure Hunt</title>
