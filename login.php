@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
         break;
         case "Login":
         $result = pg_prepare($mysqli, "my_query", "select * from user_details where u_pwd= ANY (string_to_array($2, ',')) AND u_email= ANY (string_to_array($1, ','))");
-        $result = pg_execute($mysqli, "my_query", array('$_POST['email']', '$_POST['pwd']'));
+        $result = pg_execute($mysqli, "my_query", array($_POST['email'],$_POST['pwd']));
         //$email = $mysqli->pg_escape_string($_POST['email']);
         //$pwd = $mysqli->real_escape_string($_POST['pwd']);
         //$query = "select * from user_details where u_pwd='$pwd' AND u_email='$email'";
