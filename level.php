@@ -43,7 +43,7 @@ $lvl3->lvl = "3";
 $lvl3->type = "image";
 $lvl3->question = "Guess the tool";
 $lvl3->bgImg = "url('assets/img2021/bg_img.jpg')";
-$lvl3->key = "Power BI";
+$lvl3->key = "power bi";
 $lvl3->questionImg = array("3.png");
 $lvl3->color = "white";
 
@@ -54,7 +54,7 @@ $lvl4->lvl = "4";
 $lvl4->type = "image";
 $lvl4->question = "Who is the artist referred here?";
 $lvl4->bgImg = "url('assets/img2021/bg_img.jpg')";
-$lvl4->key = "Taylor Swift";
+$lvl4->key = "taylor swift";
 $lvl4->questionImg = array("4.png");
 $lvl4->color = "black";
 
@@ -64,7 +64,7 @@ $lvl5->lvl = "5";
 $lvl5->type = "image";
 $lvl5->question = "Guess the movie";
 $lvl5->bgImg = "url('assets/img2021/bg_img.jpg')";
-$lvl5->key = "The Social Network";
+$lvl5->key = "the social network";
 $lvl5->questionImg = array("5.png");
 $lvl5->color = "white";
 
