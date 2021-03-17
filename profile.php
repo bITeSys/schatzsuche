@@ -1,6 +1,5 @@
 <?php session_start();
 if(!isset($_SESSION['login_user_email'])){
-    echo "hih";
     ob_start();
     header("Location: index.php");
     ob_end_flush();
