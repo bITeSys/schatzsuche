@@ -26,10 +26,12 @@ if(isset($_POST['submit'])){
         }
         break;
         case "Login":
-        $email = $mysqli->pg_escape_string($_POST['email']);
-        $pwd = $mysqli->real_escape_string($_POST['pwd']);
-        $query = "select * from user_details where u_pwd='$pwd' AND u_email='$email'";
-        $result = $mysqli->query($query);
+        $statement = pg_prepare($mysqli, "select * from user_details where u_pwd='$pwd' AND u_email='$email'");
+        $result = pg_execute($mysqli, $statement, [$_POST['email'], $_POST['pwd']]);
+        //$email = $mysqli->pg_escape_string($_POST['email']);
+        //$pwd = $mysqli->real_escape_string($_POST['pwd']);
+        //$query = "select * from user_details where u_pwd='$pwd' AND u_email='$email'";
+       // $result = $mysqli->query($query);
         if($result->num_rows>0){
             $_SESSION['login_user_email']=$email;
                 while ($obj = $result->fetch_object()) {
