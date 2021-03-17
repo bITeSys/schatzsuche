@@ -33,9 +33,8 @@ if(isset($_POST['submit'])){
         //$query = "select * from user_details where u_pwd='$pwd' AND u_email='$email'";
        // $result = $mysqli->query($query);
         if(pg_num_rows($result)>0){
-           echo "hi";
             $_SESSION['login_user_email']=$email;
-                while ($obj = $result->fetch_object()) {
+               while ($obj = pg_fetch_object($result)) {
                     $_SESSION['login_user_name']=$obj->u_name;
                     $_SESSION['login_user_college']=$obj->u_college;
                     $_SESSION['login_user_lvl']=$obj->u_lvl;
