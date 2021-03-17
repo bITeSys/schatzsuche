@@ -4,7 +4,7 @@ session_start();
 require("mail.php");
 if(isset($_POST['submit'])){
     include('db.php');
-    $mysqli = new mysqli("http://192.168.56.1",$user,$pwd,$dbName);
+    $mysqli = new mysqli("http://192.168.56.1/",$user,$pwd,$dbName);
     //$mysqli = mysqli_connect("localhost",$user,$pwd,$dbName);
     switch($_POST['submit']){
         case "Register":
