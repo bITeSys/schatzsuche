@@ -8,9 +8,13 @@ if(isset($_POST['submit'])){
     $host        = "host = ec2-34-195-233-155.compute-1.amazonaws.com";
     $port        = "port = 5432";
     $dbname      = "dbname = d7uanuiosmq0is";
-    $credentials = "user = lfkblfepuqflgr password=8d2d611f0f5075077857b68fb7042f8aa830966c060975783a6bd06fb4892804
-";
+    $credentials = "user = lfkblfepuqflgr password=8d2d611f0f5075077857b68fb7042f8aa830966c060975783a6bd06fb4892804";
     $mysqli = pg_connect( "$host $port $dbname $credentials"  );
+    if(!$mysqli) {
+         echo "Error : Unable to open database\n";
+      } else {
+         echo "Opened database successfully\n";
+      }
     //$mysqli = mysqli_connect("ec2-34-195-233-155.compute-1.amazonaws.com",$user,$pwd,$dbName);
     switch($_POST['submit']){
         case "Register":
