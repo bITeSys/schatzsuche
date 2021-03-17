@@ -1,0 +1,19 @@
+.bgimg{
+	 background-image: url("img/indexBG.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.fonts{
+	font-weight: 700;
+    color: white;
+}
+.fonts a{
+	font-weight: 700;
+    color: white;
+}
+#questions{
+	font-weight: 700;
+	font-size: 20px;
+}
