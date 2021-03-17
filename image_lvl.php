@@ -11,7 +11,7 @@
 <p><?php echo $levels[$curr_lvl]->question ;?></p>
 <?php
 foreach ($levels[$curr_lvl]->questionImg as $lvlImg) {
-    echo "<img height='220px' width='250px' src='assets/img/".$lvlImg."'/>&nbsp;";
+    echo "<img height='220px' width='250px' src='assets/img2021/".$lvlImg."'/>&nbsp;";
 }
 ?>
 <form method='post'>Answer : <input name="key" type="text" autocomplete="off" >&nbsp;&nbsp;<input class="form-submit-button" type="submit" name="submit" value="Submit"></form>
