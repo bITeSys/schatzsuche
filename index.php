@@ -1,4 +1,4 @@
-<?php
+<?php session_start();
    include('login.php'); // Includes Login Script
    if(isset($_SESSION['login_user_email']))header("Location: profile.php");
    ?>
