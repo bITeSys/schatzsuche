@@ -32,7 +32,8 @@ if(isset($_POST['submit'])){
         //$pwd = $mysqli->real_escape_string($_POST['pwd']);
         //$query = "select * from user_details where u_pwd='$pwd' AND u_email='$email'";
        // $result = $mysqli->query($query);
-        if($result->num_rows>0){
+        if(pg_num_rows($result)>0){
+           echo "hi";
             $_SESSION['login_user_email']=$email;
                 while ($obj = $result->fetch_object()) {
                     $_SESSION['login_user_name']=$obj->u_name;
