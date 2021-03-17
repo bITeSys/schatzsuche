@@ -10,7 +10,6 @@ require_once("level.php");
 
 $curr_lvl = $_SESSION['login_user_lvl'];
 $curr_email = $_SESSION['login_user_email'];
-echo "def";
 $authlvl = 31;
 $getlvl = 7;
 
@@ -35,7 +34,7 @@ if(isset($_POST['submit']) || isset($_POST['key']) || (isset($_GET['key'])&&$cur
 
         $query = "UPDATE user_details set u_lvl='".$curr_lvl."'where u_email='".$curr_email."'";
         $mysqli->query($query);
-        echo "abc";
+        
     }
     if($curr_lvl==$authlvl){
         require_once('rfc6238.php');
