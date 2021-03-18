@@ -530,7 +530,7 @@ $lvlg->lvl = "39";
 $lvlg->type = "image";
 $lvlg->question = "What is this approach referred here?";
 $lvlg->bgImg = "url('assets/img2021/bg_img.jpg')";
-$lvlg->key = "freemium marketing";
+$lvlg->key = "freemium model";
 $lvlg->questionImg = array("39po.png");
 $lvlg->color = "white";
 
