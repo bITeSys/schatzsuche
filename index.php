@@ -20,26 +20,6 @@
             <input class="form-submit-button" name="submit" type="submit" onclick="myFunction()" value="Login" >
          </form>
       </div>
-      <div class="regi-panel">
-         <form method='post'>
-            <ul>
-               <b>New Participant:</b><br>
-               <li>
-                  <input type="text" name="fname"   placeholder="Full Name" required/>
-               </li>
-               <li>
-                  <input type="text" name="email" placeholder="Email" required/>
-               </li>
-               <li>
-                  <input type="text" name="college" placeholder="College/Company Name" required/>
-               </li>
-               <li>
-                  <input type="text" name= "phone" placeholder="Phone No." required/>
-               </li>
-               <input class="form-submit-button" type="submit" name="submit" onclick="myFunction()" value="Register">
-            </ul>
-         </form>
-      </div>
       <?php include('footer.php'); ?>
    </body>
 </html>
