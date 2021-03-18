@@ -22,7 +22,7 @@ $lvl1->question = "If not 6, what is it?";
 $lvl1->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl1->key = "r";
 $lvl1->questionImg = array("1.jpg");
-$lvl1->color = "black";
+$lvl1->color = "white";
 $lvl1->fontweight = "800";
 $lvl1->fontsize = "20px";
 
@@ -56,7 +56,7 @@ $lvl4->question = "Who is the artist referred here?";
 $lvl4->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl4->key = "taylor swift";
 $lvl4->questionImg = array("4.png");
-$lvl4->color = "black";
+$lvl4->color = "white";
 
 $lvl5 = new Level();
 $lvl5->lvlHead = "Level 5";
@@ -76,7 +76,7 @@ $lvl6->question = "Must Watch 101";
 $lvl6->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl6->key = "parasite";
 $lvl6->questionImg = array("6.png");
-$lvl6->color = "black";
+$lvl6->color = "white";
 $lvl6->class = "";
 
 $lvl7 = new Level();
@@ -131,7 +131,7 @@ $lvl10->question = "...";
 $lvl10->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl10->key = "kessler syndrome";
 $lvl10->questionImg = array("10.png");
-$lvl10->color = "black";
+$lvl10->color = "white";
 
 // $lvl10 = new Level();
 // $lvl10->lvl = "10";
@@ -147,7 +147,7 @@ $lvl11->question = "WFH Hyphen Virus";
 $lvl11->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl11->key = "covid-19";
 $lvl11->questionImg = array("11.png");
-$lvl11->color = "black";
+$lvl11->color = "white";
 
 $lvl11_1 = new Level();
 $lvl11_1->lvlHead = "Level 12";
@@ -207,7 +207,7 @@ $lvl13->question = "What is the new promotional tool?";
 $lvl13->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl13->key = "marquee";
 $lvl13->questionImg = array("16.png");
-$lvl13->color = "black";
+$lvl13->color = "white";
 
 $lvl14 = new Level();
 $lvl14->lvlHead = "Level 17";
@@ -217,7 +217,7 @@ $lvl14->question = "Who is the person referred here?";
 $lvl14->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl14->key = "rohit sharma";
 $lvl14->questionImg = array("17.png");
-$lvl14->color = "black";
+$lvl14->color = "white";
 
 $lvl15 = new Level();
 $lvl15->lvlHead = "Level 18";
@@ -247,7 +247,7 @@ $lvl17->question = "Guess. Solve. Conquer.";
 $lvl17->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl17->key = "goal-line technology";
 $lvl17->questionImg = array("20.png");
-$lvl17->color = "black";
+$lvl17->color = "white";
 
 
 
@@ -299,7 +299,7 @@ $lvl20->question = "Guess. Solve. Conquer.";
 $lvl20->key = "journey to the centre of the earth";
 $lvl20->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl20->questionImg = array("23.png");
-$lvl20->color = "black";
+$lvl20->color = "white";
 
 $lvl21_1 = new Level();
 $lvl21_1->lvlHead = "Level 24";
@@ -319,7 +319,7 @@ $lvl22_2->question = "Which film?";
 $lvl22_2->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl22_2->key = "the social dilemma";
 $lvl22_2->questionImg = array("25.png");
-$lvl22_2->color = "black";
+$lvl22_2->color = "white";
 
 
 $lvl21 = new Level();
@@ -374,7 +374,7 @@ $lvl24->question = "Which analytical tool?";
 $lvl24->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl24->key = "umpire decision review system";
 $lvl24->questionImg = array("29.png");
-$lvl24->color = "black";
+$lvl24->color = "white";
 
 
 /*$lvl24 = new Level();
@@ -413,7 +413,7 @@ $lvl30->question = "Guess. Solve. Conquer.";
 $lvl30->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl30->key = "semi structured data";
 $lvl30->questionImg = array("31.png");
-$lvl30->color = "black";
+$lvl30->color = "white";
 
 
 /*$lvl30 = new Level();
@@ -491,7 +491,7 @@ $lvld->question = "Guess. Solve. Conquer.";
 $lvld->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvld->key = "sanjeev bikhchandani";
 $lvld->questionImg = array("36.png");
-$lvld->color = "black";
+$lvld->color = "white";
 
 $lvle = new Level();
 $lvle->lvlHead = "Level 37";
@@ -552,7 +552,7 @@ $lvlEnd->question = "What analytical measure is this?";
 $lvlEnd->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlEnd->key = "pay per click";
 $lvlEnd->questionImg = array("41.png");
-$lvlEnd->color = "black";
+$lvlEnd->color = "white";
 
 $lvli = new Level();
 $lvli->lvlHead = "Level 42 ";
@@ -595,7 +595,7 @@ $lvln->question = "Guess. Solve. Conquer.";
 $lvln->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvln->key = "cryptojacking";
 $lvln->questionImg = array("45.png");
-$lvln->color = "black";
+$lvln->color = "white";
 
 $lvlaa = new Level();
 $lvlaa->lvlHead = "Level 46";
@@ -646,7 +646,7 @@ $lvl50->question = "Show me the information!  How to see the information?";
 $lvl50->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl50->key = "qr code";
 $lvl50->questionImg = array("50.png");
-$lvl50->color = "black";
+$lvl50->color = "white";
 
 $lvl51 = new Level();
 $lvl51->lvlHead = "Level 51";
@@ -656,7 +656,7 @@ $lvl51->question = "Which new analytical software is this built by a giant?";
 $lvl51->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl51->key = "microsoft mesh";
 $lvl51->questionImg = array("51.png");
-$lvl51->color = "black";
+$lvl51->color = "white";
 
 $lvl52 = new Level();
 $lvl52->lvlHead = "Level 52";
@@ -686,7 +686,7 @@ $lvl54->question = "What is this digital object referred here?";
 $lvl54->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl54->key = "non-fungible tokens";
 $lvl54->questionImg = array("54.png");
-$lvl54->color = "black";
+$lvl54->color = "white";
 
 $lvl55 = new Level();
 $lvl55->lvlHead = "Level 55";
@@ -706,7 +706,7 @@ $lvl56->question = "Guess. Solve. Conquer.";
 $lvl56->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl56->key = "dynasphere";
 $lvl56->questionImg = array("56.png");
-$lvl56->color = "black";
+$lvl56->color = "white";
 
 
 $lvl57 = new Level();
@@ -727,7 +727,7 @@ $lvl58->question = "Guess. Solve. Conquer.";
 $lvl58->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl58->key = "neuromorphic computing";
 $lvl58->questionImg = array("58.png");
-$lvl58->color = "black";
+$lvl58->color = "white";
 
 //$lvl59 = new Level();
 //$lvl59->lvlHead = "Level 59";
