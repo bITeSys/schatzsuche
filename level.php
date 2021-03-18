@@ -33,7 +33,7 @@ $lvl2->lvl = "2";
 $lvl2->type = "image";
 $lvl2->question = "Eye on the score...";
 $lvl2->bgImg = "url('assets/img2021/bg_img.jpg')";
-$lvl2->key = "money ball";
+$lvl2->key = "moneyball";
 $lvl2->questionImg = array("2.png");
 $lvl2->color = "white";
 
