@@ -490,7 +490,7 @@ $lvld->type = "image";
 $lvld->question = "Guess. Solve. Conquer.";
 $lvld->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvld->key = "sanjeev bikhchandani";
-$lvld->questionImg = array("36.png");
+$lvld->questionImg = array("36hy.png");
 $lvld->color = "white";
 
 $lvle = new Level();
@@ -500,7 +500,7 @@ $lvle->type = "image";
 $lvle->question = "Guess. Solve. Conquer.";
 $lvle->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvle->key = "cambridge analytica";
-$lvle->questionImg = array("37.png");
+$lvle->questionImg = array("37re.png");
 $lvle->color = "white";
 
 
@@ -511,7 +511,7 @@ $lvlf->type = "image";
 $lvlf->question = "Transformed into what?";
 $lvlf->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlf->key = "microsoft azure";
-$lvlf->questionImg = array("38.png");
+$lvlf->questionImg = array("38bt.png");
 $lvlf->color = "white";
 
 // $lvlf = new Level();
@@ -531,7 +531,7 @@ $lvlg->type = "image";
 $lvlg->question = "What is this approach referred here?";
 $lvlg->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlg->key = "freemium marketing";
-$lvlg->questionImg = array("39.png");
+$lvlg->questionImg = array("39po.png");
 $lvlg->color = "white";
 
 $lvlh = new Level();
@@ -541,7 +541,7 @@ $lvlh->type = "image";
 $lvlh->question = "Guess. Solve. Conquer.";
 $lvlh->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlh->key = "margin call";
-$lvlh->questionImg = array("40.png");
+$lvlh->questionImg = array("4023.png");
 $lvlh->color = "white";
 
 $lvlEnd = new Level();
@@ -551,7 +551,7 @@ $lvlEnd->type = "image";
 $lvlEnd->question = "What analytical measure is this?";
 $lvlEnd->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlEnd->key = "pay per click";
-$lvlEnd->questionImg = array("41.png");
+$lvlEnd->questionImg = array("4121.png");
 $lvlEnd->color = "white";
 
 $lvli = new Level();
@@ -561,7 +561,7 @@ $lvli->type = "image";
 $lvli->question = "Guess. Solve. Conquer.";
 $lvli->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvli->key = "apple ibm 5150 alan turing 8085";
-$lvli->questionImg = array("42.png");
+$lvli->questionImg = array("4254.png");
 $lvli->color = "white";
 
 
@@ -573,7 +573,7 @@ $lvlj->type = "image";
 $lvlj->question = "Guess. Solve. Conquer.";
 $lvlj->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlj->key = "issac asimov";
-$lvlj->questionImg =  array("43.png");
+$lvlj->questionImg =  array("4327.png");
 $lvlj->color = "white";
 
 
@@ -584,7 +584,7 @@ $lvlk->type = "image";
 $lvlk->question = "Solve.";
 $lvlk->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlk->key = "21280";
-$lvlk->questionImg = array("44.png");
+$lvlk->questionImg = array("4498.png");
 $lvlk->color = "white";
 
 $lvln = new Level();
@@ -594,7 +594,7 @@ $lvln->type = "image";
 $lvln->question = "Guess. Solve. Conquer.";
 $lvln->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvln->key = "cryptojacking";
-$lvln->questionImg = array("45.png");
+$lvln->questionImg = array("4512.png");
 $lvln->color = "white";
 
 $lvlaa = new Level();
@@ -604,7 +604,7 @@ $lvlaa->type = "image";
 $lvlaa->question = "Guess. Solve. Conquer.";
 $lvlaa->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlaa->key = "acoustic mirror";
-$lvlaa->questionImg = array("46.png");
+$lvlaa->questionImg = array("4678.png");
 $lvlaa->color = "white";
  
 
@@ -615,7 +615,7 @@ $lvl48->type = "image";
 $lvl48->question = "Guess. Solve. Conquer.";
 $lvl48->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl48->key = "busy beaver";
-$lvl48->questionImg = array("47.png");
+$lvl48->questionImg = array("4723.png");
 $lvl48->color = "white";
 
 $lvlaaa = new Level();
@@ -625,7 +625,7 @@ $lvlaaa->type = "image";
 $lvlaaa->question = "Guess. Solve. Conquer.";
 $lvlaaa->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvlaaa->key = "matrioshka brain";
-$lvlaaa->questionImg = array("48.png");
+$lvlaaa->questionImg = array("4898.png");
 $lvlaaa->color = "white";
 
 $lvl_49 = new Level();
@@ -635,7 +635,7 @@ $lvl_49->type = "image";
 $lvl_49->question = "Guess. Solve. Conquer.";
 $lvl_49->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl_49->key = "hamblin glasses";
-$lvl_49->questionImg = array("49.png");
+$lvl_49->questionImg = array("4921.png");
 $lvl_49->color = "white";
 
 $lvl50 = new Level();
@@ -645,7 +645,7 @@ $lvl50->type = "image";
 $lvl50->question = "Show me the information!  How to see the information?";
 $lvl50->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl50->key = "qr code";
-$lvl50->questionImg = array("50.png");
+$lvl50->questionImg = array("5023.png");
 $lvl50->color = "white";
 
 $lvl51 = new Level();
@@ -655,7 +655,7 @@ $lvl51->type = "image";
 $lvl51->question = "Which new analytical software is this built by a giant?";
 $lvl51->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl51->key = "microsoft mesh";
-$lvl51->questionImg = array("51.png");
+$lvl51->questionImg = array("5124.png");
 $lvl51->color = "white";
 
 $lvl52 = new Level();
@@ -665,7 +665,7 @@ $lvl52->type = "image";
 $lvl52->question = "Guess. Solve. Conquer.";
 $lvl52->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl52->key = "impulsoria";
-$lvl52->questionImg = array("52.png");
+$lvl52->questionImg = array("5221.png");
 $lvl52->color = "white";
 
 $lvl53 = new Level();
@@ -675,7 +675,7 @@ $lvl53->type = "image";
 $lvl53->question = "Guess. Solve. Conquer.";
 $lvl53->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl53->key = "messier87";
-$lvl53->questionImg = array("53.png");
+$lvl53->questionImg = array("5376.png");
 $lvl53->color = "white";
 
 $lvl54 = new Level();
@@ -685,7 +685,7 @@ $lvl54->type = "image";
 $lvl54->question = "What is this digital object referred here?";
 $lvl54->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl54->key = "non-fungible tokens";
-$lvl54->questionImg = array("54.png");
+$lvl54->questionImg = array("5489.png");
 $lvl54->color = "white";
 
 $lvl55 = new Level();
@@ -695,7 +695,7 @@ $lvl55->type = "image";
 $lvl55->question = "Guess. Solve. Conquer.";
 $lvl55->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl55->key = "propulsive landing";
-$lvl55->questionImg = array("55.png");
+$lvl55->questionImg = array("5521.png");
 $lvl55->color = "white";
 
 $lvl56 = new Level();
@@ -705,7 +705,7 @@ $lvl56->type = "image";
 $lvl56->question = "Guess. Solve. Conquer.";
 $lvl56->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl56->key = "dynasphere";
-$lvl56->questionImg = array("56.png");
+$lvl56->questionImg = array("5698.png");
 $lvl56->color = "white";
 
 
@@ -716,7 +716,7 @@ $lvl57->type = "image";
 $lvl57->question = "Guess. Solve. Conquer.";
 $lvl57->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl57->key = "biomimicry";
-$lvl57->questionImg = array("57.png");
+$lvl57->questionImg = array("5745.png");
 $lvl57->color = "white";
 
 $lvl58 = new Level();
@@ -726,7 +726,7 @@ $lvl58->type = "image";
 $lvl58->question = "Guess. Solve. Conquer.";
 $lvl58->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvl58->key = "neuromorphic computing";
-$lvl58->questionImg = array("58.png");
+$lvl58->questionImg = array("5873.png");
 $lvl58->color = "white";
 
 //$lvl59 = new Level();
