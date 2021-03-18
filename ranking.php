@@ -41,7 +41,7 @@ $result4 = pg_execute($mysqli, "my_query4", array());
 if(pg_num_rows($result4)>0){
     echo "<div style='text-align:-webkit-center;text-align:-moz-center'><table border='1px solid white' cellpadding='5px'><tr><td width='250px'>Name</td><td style='text-align:center; width:50px'>Level</td></tr>";
     while($row = pg_fetch_object($result4)){
-	echo "<tr><td>"<?php echo $row->u_name ; ?>"</td><td style='text-align:center'>"<?php echo $row->u_lvl; ?>"</td></tr>";
+	echo '<tr><td>'.$row->u_name.'</td><td style='text-align:center'>'.$row->u_lvl.'</td></tr>';
     }
     echo "</table></div>";
 }
