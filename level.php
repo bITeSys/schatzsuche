@@ -287,7 +287,7 @@ $lvl19->lvl = "22";
 $lvl19->type = "image";
 $lvl19->question = "Guess. Solve. Conquer.";
 $lvl19->bgImg = "url('assets/img2021/bg_img.jpg')";
-$lvl19->key = "adobe XD";
+$lvl19->key = "adobe xd";
 $lvl19->questionImg = array("22.png");
 $lvl19->color = "white";
 
