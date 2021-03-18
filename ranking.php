@@ -41,13 +41,7 @@ $result4 = pg_execute($mysqli, "my_query4", array());
 if(pg_num_rows($result4)>0){
     echo "<div style='text-align:-webkit-center;text-align:-moz-center'><table border='1px solid white' cellpadding='5px'><tr><td width='250px'>Name</td><td style='text-align:center; width:50px'>Level</td><td style='text-align:center; width:250px'>Time</td></tr>";
     while($row = pg_fetch_object($result4)){
-		 if($row[2]=="subhrajyoti17@iimshillong.ac.in" || $row[2]=="indrasis17@iimshillong.ac.in"){
-        $img = "<img witdth='20px' height='20px' src='assets/img/crown.png'></img>";
-       }
-       else{
-        $img="";
-       }
-        echo "<tr><td>".$row[1].$img."</td><td style='text-align:center'>".$row[6]."</td><td style='text-align:center'>".date( "Y-M-d H:i:s", strtotime($row[7])+5.5*3600)."</td></tr>";
+	echo "<tr><td>"$row->u_name"</td><td style='text-align:center'>"$row->u_lvl"</td><td style='text-align:center'>".date( "Y-M-d H:i:s", strtotime($row->time)+5.5*3600)."</td></tr>";
     }
     echo "</table></div>";
 }
