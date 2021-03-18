@@ -572,7 +572,7 @@ $lvlj->lvl = "43";
 $lvlj->type = "image";
 $lvlj->question = "Guess. Solve. Conquer.";
 $lvlj->bgImg = "url('assets/img2021/bg_img.jpg')";
-$lvlj->key = "issac asimov";
+$lvlj->key = "isaac asimov";
 $lvlj->questionImg =  array("4327.png");
 $lvlj->color = "white";
 
