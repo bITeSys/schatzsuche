@@ -12,19 +12,6 @@ if(isset($_POST['submit'])){
     $mysqli = pg_connect( "$host $port $dbname $credentials"  );
     //$mysqli = mysqli_connect("ec2-34-195-233-155.compute-1.amazonaws.com",$user,$pwd,$dbName);
     switch($_POST['submit']){
-        case "Register":
-        $fname = $mysqli->real_escape_string($_POST['fname']);
-        $email = $mysqli->real_escape_string($_POST['email']);
-        $college = $mysqli->real_escape_string($_POST['college']);
-        $phone = $mysqli->real_escape_string($_POST['phone']);
-        $pwd = bin2hex(openssl_random_pseudo_bytes(4));
-        $query = "INSERT INTO user_details (u_name, u_email, u_college, u_contact, u_pwd) VALUES ('".$fname."', '".$email."', '".$college."',".$phone.", '".$pwd."')";
-        // echo $query;
-        $result = $mysqli->query($query);
-        if($result){
-            sendPwd($pwd,$email);
-        }
-        break;
         case "Login":
         $result = pg_prepare($mysqli, "my_query", "select * from user_details where u_pwd = $2 AND u_email = $1");
         $result = pg_execute($mysqli, "my_query", array($_POST['email'],$_POST['pwd']));
