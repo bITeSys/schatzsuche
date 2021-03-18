@@ -145,7 +145,7 @@ $lvl11->lvl = "11";
 $lvl11->type = "image";
 $lvl11->question = "WFH Hyphen Virus";
 $lvl11->bgImg = "url('assets/img2021/bg_img.jpg')";
-$lvl11->key = "Covid-19";
+$lvl11->key = "covid-19";
 $lvl11->questionImg = array("11.png");
 $lvl11->color = "black";
 
