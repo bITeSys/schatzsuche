@@ -561,7 +561,7 @@ $lvli->type = "image";
 $lvli->question = "Guess. Solve. Conquer.";
 $lvli->bgImg = "url('assets/img2021/bg_img.jpg')";
 $lvli->key = "apple ibm 5150 alan turing 8085";
-$lvli->questionImg = array("42.PNG");
+$lvli->questionImg = array("42.png");
 $lvli->color = "white";
 
 
