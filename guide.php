@@ -22,7 +22,7 @@
 <li>The game consists of multiple levels.</li>
 <li>Each participant will initially start from the level 1.</li>
 <li>Level may consist of a puzzle, or a task to be performed to reach next level.</li>
-<li style="font-weight: 700">Input answers in lowercase and use only space as a separator[no commas].</li>
+<li style="font-weight: 700">Enter your answers in lowercase. Commas, space, fullstops matter!</li>
 <li>Participant may use any means to clear a level, except breaking into the platform.</li>
 <li>Participant completing the maximum number of levels will be declared winner. Incase of tie, participant completing first will be the winner.</li>
 <li>Participants can view the current top 10 players in the "Leader Board" link given on top right corner.</li>
